@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Ashish</h1>
+        <h2>Software Developer / Consultant / Entrepreneur</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-kaggle"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Projects</h1>
+        <section>
+            <h2>Full stack Developer</h2>
+            <p>
+              Product lead for multiple teams involving multiple mobile/ web applications using Javascript(React, Bootstrap) and
+              Python-Django(Backend) at Pencap technologies, implementing projects using agile methodologies and continuous deployment cycle. Client liaison on product requirements and business decisions to drive decisions on MVP feature
+              specifications while also providing technical guidance on solutions to product feature requirements for customers.
+            </p>
+
+            <p>
+
+              Worked as a Servicenow Technical Architect providing solutions and designing implementations for instances with 100 thousand users. Was part of the Devops team to regularly deploy and maintain codebase as well as providing guidance on processes to follow across the organisation across various teams to implment the same.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Python/ Django</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript(React/ Bootstrap)</div>
+            </div>
+            <!--<button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button> -->
+        </section>
+        <section>
+          <h2>Analytic Consultant</h2>
+          <p>
+            Built and used data models using python(scikit) libraries to perform market analysis and analyze customer requirements to drive better feature specifications for the clients.
+          
+          </p>
+
+          <p>
+            Computer vision consultant for a bangalore based startup CloudCollab Technologies to provide guidance and training to the team in facial recognition models.
+        
+          </p>
+
+          <p>
+            Developed an ensemble model to predict commodity prices in gold markets using Deep Reinforcement learning architecture for a project for Uniresearchers.
+
+            
+          </p>
+          <div id="used">
+              <div><i class="fas fa-circle"></i>&nbsp;Tree based ensemble Models</div>
+              <div><i class="fas fa-circle"></i>&nbsp;Neural Nets</div>
+              <div><i class="fas fa-circle"></i>&nbsp;Transformer architecture</div>
+              
+          </div>
+          
+      </section>
+      <section>
+        <h2>Operations Management</h2>
+        <p>
+          Managed city operations for a rental startup, Guarented, with a team of 30+ executives improving process fulfillment upto 40%.
+
+          Was instrumental in moving the team from excel based process to a stable database stack to monitor and analyze business data to drive better decisions.
+
+          
+        </p>
+        <div id="used">
+            <div><i class="fas fa-circle"></i>&nbsp;Operations</div>
+            <div><i class="fas fa-circle"></i>&nbsp;Team Management</div>
+            <div><i class="fas fa-circle"></i>&nbsp;Logistics</div>
+        </div>
+        
+    </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>About Me</h1>
+            <section>
+                <h2>Experience</h2>
+                <p>
+                  Software consultant with 8+ years of work experience in software development, data analytics and machine learning.
+                  Expertise in software development, machine learning, predictive modeling, business analytics, deep
+                  learning, product development, team management, operations and entrepreneurial experience.
+
+                </p>
+                
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <p>
+                  
+                  Technical : Deep learning architechtures, Machine learning algorithms, Predictive analytics(feature engineering, modeling, validation), Python, JavaScript, Django, React, SQL, Pytorch, Tensorflow, Service-Now
+                  
+                </p>
+                <p>
+                  Other skills : Team management, Enterpreneurship, DevOps, Operations, Logistics, Scrum, Communication.
+                  
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>Contact</h1>
+            <section>
+                <h2>Reach out to me here!</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            for everything beautiful <br> <a href="https://www.youtube.com/watch?v=oHO6pbjQ9ec&list=PL734C88563056123B&ab_channel=stimpykatz">serenity</a>
+        </div>
+    <script src="{% static 'js/index.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/particles.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
